@@ -189,13 +189,5 @@ Antes de começar, você precisará ter o seguinte instalado em seu sistema:
 \## 📂 Estrutura do Projeto
 
 
-src/main/java/com/sudoku/
-├── SudokuApplication.java       // Ponto de entrada da aplicação JavaFX
-├── constants/                   // Enums e constantes, como o estado do jogo
-├── domain/                      // Classes de modelo (SudokuGame, Coordinates)
-├── logic/                       // Lógica do jogo (regras de validação, etc.)
-└── ui/                          // Classes da interface do usuário com JavaFX
-
-
 O código-fonte está organizado em pacotes para manter uma arquitetura limpa:
 
