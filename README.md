@@ -6,7 +6,7 @@
 
 
 
-!\[Screenshot do Jogo](URL\_DA\_SUA\_IMAGEM\_AQUI)
+!\[Screenshot do Jogo](https://github.com/josewilson/Jogo_Sudoku_Game/blob/main/screenshot.png))
 
 
 
@@ -130,7 +130,7 @@ Antes de começar, você precisará ter o seguinte instalado em seu sistema:
 
 &nbsp;   ```bash
 
-&nbsp;   git clone \[https://github.com/josewilson/sudoku-java-corrigido.git](https://github.com/josewilson/sudoku-java-corrigido.git)
+&nbsp;   git clone \(https://github.com/josewilson/Jogo_Sudoku_Game)
 
 &nbsp;   ```
 
