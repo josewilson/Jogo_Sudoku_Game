@@ -1,0 +1,11 @@
+com\sudoku\constants\GameState.class
+com\sudoku\ui\IUserInterfaceContract.class
+com\sudoku\ui\UserInterfaceImpl.class
+com\sudoku\logic\SudokuUtilities.class
+com\sudoku\SudokuApplication.class
+com\sudoku\ui\IUserInterfaceContract$EventListener.class
+com\sudoku\domain\Coordinates.class
+com\sudoku\ui\IUserInterfaceContract$View.class
+com\sudoku\ui\SudokuTextField.class
+com\sudoku\domain\SudokuGame.class
+com\sudoku\logic\GameLogic.class
