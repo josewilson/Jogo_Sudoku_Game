@@ -186,8 +186,5 @@ Antes de começar, você precisará ter o seguinte instalado em seu sistema:
 
 
 
-\## 📂 Estrutura do Projeto
 
-
-O código-fonte está organizado em pacotes para manter uma arquitetura limpa:
 
