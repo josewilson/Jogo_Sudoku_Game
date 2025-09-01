@@ -1,188 +1,118 @@
-\# Jogo de Sudoku em JavaFX
 
 
 
-> Um clássico jogo de Sudoku com uma interface gráfica limpa e funcional, construído utilizando Java e a biblioteca JavaFX. O projeto é gerenciado com Apache Maven para fácil compilação e execução.
 
 
+
+
+
+---
+
+# 🎮 Jogo de Sudoku em JavaFX
+
+Aplicativo desktop clássico de Sudoku com interface gráfica, desenvolvido em **Java 11** e **JavaFX 17**, utilizando **Apache Maven** para gerenciamento de dependências e execução.  
+Projeto criado durante o Bootcamp **GFT Start#7 (DIO)** com foco em lógica de programação, separação de responsabilidades e boas práticas de desenvolvimento.
 
 !\[Screenshot do Jogo](https://github.com/josewilson/Jogo_Sudoku_Game/blob/main/screenshot.png))
+---
+
+## 📋 Índice
+- [💻 Sobre o Projeto](#-sobre-o-projeto)  
+- [✨ Funcionalidades](#-funcionalidades)  
+- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)  
+- [🚀 Como Executar o Projeto](#-como-executar-o-projeto)  
+  - [Pré-requisitos](#pré-requisitos)  
+  - [Instalação e Execução](#instalação-e-execução)  
+- [🎯 Como Jogar](#-como-jogar)  
+- [📂 Estrutura do Projeto](#-estrutura-do-projeto)  
+- [👨‍💻 Autor](#-autor)  
+- [📄 Licença](#-licença)  
 
 
 
 ---
 
+## 💻 Sobre o Projeto
+Este projeto implementa um jogo de Sudoku em desktop com um tabuleiro **9x9** pré-definido.  
+O usuário pode preencher as células vazias, e o sistema valida automaticamente cada jogada.  
+Ao finalizar corretamente, uma mensagem de vitória é exibida.  
 
-
-\## 📋 Índice
-
-
-
-\- \[Sobre o Projeto](#-sobre-o-projeto)
-
-\- \[✨ Funcionalidades](#-funcionalidades)
-
-\- \[🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
-
-\- \[🚀 Como Executar o Projeto](#-como-executar-o-projeto)
-
-&nbsp; - \[Pré-requisitos](#pré-requisitos)
-
-&nbsp; - \[Instalação e Execução](#instalação-e-execução)
-
-\- \[룰 Como Jogar](#-como-jogar)
-
-\- \[📂 Estrutura do Projeto](#-estrutura-do-projeto)
-
-\- \[📄 Licença](#-licença)
-
-
+O design segue princípios de **responsabilidade separada**:  
+- **Model** → regras e lógica do Sudoku  
+- **View** → interface gráfica com JavaFX  
+- **Controller** → integração entre regras e UI  
 
 ---
 
-
-
-\## 💻 Sobre o Projeto
-
-
-
-Este projeto foi desenvolvido como uma aplicação desktop para jogar Sudoku. Ele apresenta um tabuleiro 9x9 pré-preenchido com um desafio, permitindo que o usuário preencha as células vazias. A aplicação valida as entradas e exibe uma mensagem de conclusão quando o quebra-cabeça é resolvido corretamente.
-
-
-
-O foco foi criar uma aplicação robusta, seguindo princípios de separação de responsabilidades (lógica, dados e interface do usuário).
-
-
+## ✨ Funcionalidades
+- 🎨 **Interface gráfica intuitiva** com JavaFX  
+- 🧩 **Tabuleiro 9x9 pré-carregado** com desafio inicial  
+- ⛔ **Células fixas bloqueadas** (não editáveis)  
+- 🔢 **Validação automática** de entradas (1–9)  
+- 🏆 **Mensagem de vitória** ao completar corretamente  
 
 ---
 
-
-
-\## ✨ Funcionalidades
-
-
-
-\-   \*\*Interface Gráfica Intuitiva:\*\* Tabuleiro 9x9 claro e fácil de usar.
-
-\-   \*\*Tabuleiro Pré-definido:\*\* Inicia com um jogo pronto para ser solucionado.
-
-\-   \*\*Validação de Entrada:\*\* Permite apenas a inserção de números de 1 a 9.
-
-\-   \*\*Detecção de Vitória:\*\* Exibe uma mensagem de parabéns ao completar o jogo corretamente.
-
-\-   \*\*Células Não Editáveis:\*\* Os números iniciais do desafio são bloqueados para evitar alterações.
-
-
+## 🛠️ Tecnologias Utilizadas
+- ☕ **Java 11**  
+- 🎨 **JavaFX 17**  
+- 📦 **Apache Maven**  
 
 ---
 
+## 🚀 Como Executar o Projeto
 
+### Pré-requisitos
+Instale em sua máquina:  
+- **Java Development Kit (JDK) 11 ou superior** → [Download OpenJDK](https://adoptium.net/)  
+- **Apache Maven** → [Instruções de instalação](https://maven.apache.org/install.html)  
+- **Git** → [Instruções de instalação](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
 
-\## 🛠️ Tecnologias Utilizadas
+### Instalação e Execução
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/josewilson/Jogo_Sudoku_Game.git
 
+2. Entre no diretório do projeto:
+   ```bash
+   cd Jogo_Sudoku_Game
 
+3. Compile e execute:
+   ```bash
+   mvn clean javafx:run
 
-O projeto foi construído com as seguintes tecnologias:
+## 🎯 Como Jogar
 
+1. O tabuleiro abre parcialmente preenchido.
 
+2. Clique em uma célula vazia e insira um número de 1 a 9.
 
-\-   \*\*Java 11:\*\* Linguagem de programação principal.
+3. Para apagar, selecione a célula e pressione Backspace.
 
-\-   \*\*JavaFX 17:\*\* Biblioteca para a construção da interface gráfica do usuário (GUI).
+4. Continue preenchendo até que todas as células estejam corretas.
 
-\-   \*\*Apache Maven:\*\* Ferramenta de automação de compilação e gerenciamento de dependências.
+5. Uma mensagem de “Parabéns” será exibida ao completar o jogo.
 
 
+## 📂 Estrutura do Projeto
+- 📂 src/ → Código-fonte (Model, View, Controller)  
+- 📜 pom.xml → Configuração do Maven  
+- 📜 README.md → Documentação  
 
----
 
+ ## 👨‍💻 Autor
 
+José Wilson – Desenvolvedor Backend Júnior
+-📌 [LinkedIn](https://www.linkedin.com/in/jose-wilson-alves-de-souza/)
+-📌 [GitHub](https://github.com/josewilson)
 
-\## 🚀 Como Executar o Projeto
+⭐ Se este projeto foi útil para você, não esqueça de deixar sua estrela!
 
+## 📄 Licença
 
+Este projeto é de uso **educacional** e pode ser utilizado para estudos, testes e aprimoramento.
 
-Siga os passos abaixo para executar o jogo em sua máquina local.
 
-
-
-\### Pré-requisitos
-
-
-
-Antes de começar, você precisará ter o seguinte instalado em seu sistema:
-
-
-
-\-   \*\*Java Development Kit (JDK) 11 ou superior:\*\* \[Link para download do OpenJDK](https://adoptium.net/)
-
-\-   \*\*Apache Maven:\*\* \[Instruções de instalação](https://maven.apache.org/install.html)
-
-\-   \*\*Git:\*\* \[Instruções de instalação](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-
-
-\### Instalação e Execução
-
-
-
-1\.  \*\*Clone o repositório:\*\*
-
-&nbsp;   ```bash
-
-&nbsp;   git clone \(https://github.com/josewilson/Jogo_Sudoku_Game)
-
-&nbsp;   ```
-
-&nbsp;   \*(Lembre-se de usar a URL do seu próprio repositório se for diferente)\*
-
-
-
-2\.  \*\*Navegue até o diretório do projeto:\*\*
-
-&nbsp;   ```bash
-
-&nbsp;   cd sudoku-java-corrigido
-
-&nbsp;   ```
-
-
-
-3\.  \*\*Compile e execute a aplicação com Maven:\*\*
-
-&nbsp;   O plugin do JavaFX já está configurado no `pom.xml`, então basta executar o seguinte comando:
-
-&nbsp;   ```bash
-
-&nbsp;   mvn clean javafx:run
-
-&nbsp;   ```
-
-&nbsp;   A aplicação será iniciada e a janela do jogo Sudoku aparecerá.
-
-
-
----
-
-
-
-\## 룰 Como Jogar
-
-
-
-1\.  A aplicação abrirá com um tabuleiro de Sudoku parcialmente preenchido.
-
-2\.  Clique em uma das células vazias (brancas).
-
-3\.  Digite um número de `1` a `9`.
-
-4\.  Para apagar um número, selecione a célula e pressione a tecla `Backspace`.
-
-5\.  Continue preenchendo até que todas as células estejam corretas. Uma mensagem de sucesso será exibida!
-
-
-
----
 
 
 
